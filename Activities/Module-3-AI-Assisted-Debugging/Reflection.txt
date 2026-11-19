@@ -1,0 +1,89 @@
+3-1 Activity: Evaluating and Debugging Code Using AI
+Michael Wood
+SNHU
+Course Number: CS-530 AI Princip and Applications
+Instructor: Francis Akowuah
+Date Due: 10/11/2026
+
+3-1 Activity: Evaluating and Debugging Code Using AI
+AI-Assisted Debugging with GitHub Copilot
+For this activity, I used GitHub Copilot to debug a Python function that contained syntax 
+errors, runtime errors, logic problems, and unnecessary code. Instead of asking Copilot to rewrite
+the entire program at once, I worked through the problems in stages. I started with a broad 
+prompt asking it to identify the problems without changing the code. As the debugging 
+continued, I gave it more context from Python errors, VS Code diagnostics, test results, and its 
+previous responses. This allowed me to make each prompt clearer and more specific as new 
+information became available. GitHub recommends providing clear goals and relevant context 
+when working with Copilot, while prompt engineering also involves refining instructions based 
+on the results received (DAIR.AI, n.d.; GitHub, n.d.).
+Copilot was efficient at finding a large number of problems during its first review. It 
+identified syntax errors, undefined names, type problems, logic errors, unreachable code, and 
+maintainability concerns (GitHub, 2026). However, one of the most important parts of the 
+activity happened when I asked Copilot to review its own analysis. It changed its answer and 
+said that an incorrectly indented else statement was valid. I had already run the program, and 
+Python stopped at that exact line with SyntaxError. VS Code was also reporting parser problems 
+in the same area. I gave that information back to Copilot and asked it to explain the difference. 
+Copilot then acknowledged that its previous response was wrong and correctly explained that the
+else needed to line up with the matching if statement (GitHub, 2026). This showed me why AI￾generated debugging advice still needs to be checked instead of accepted just because the 
+explanation sounds confident.
+
+My prompts became more focused as the debugging continued. After the initial review, I 
+asked Copilot to separate the problems into syntax errors, runtime errors, logic errors, and 
+readability or maintainability concerns. I then asked it to fix only the syntax errors so I could run 
+the program again and see what Python reported next. From that point forward, I used each new 
+runtime error to guide the next prompt. GitHub recommends breaking larger problems into 
+smaller tasks and giving Copilot enough context to understand the specific goal (GitHub, n.d.). 
+That approach worked well for me because I like to take the guesswork out of my prompts, so 
+the AI has a clear concept of what I want it to do.
+The activity also showed that making a program run is not the same thing as making it 
+correct. After several runtime errors were fixed, the program finally executed without a 
+traceback, but the calculated statistics were still wrong. Copilot found that the maximum value 
+was not being updated because the code used == instead of =. It also found that the minimum 
+variable contained the built-in min function rather than the actual minimum value. Copilot 
+corrected those two problems and tested the function with [1, 2, 3, 4, 5]. The result was an 
+average of 3.0, a maximum of 5, and a minimum of 1 (GitHub, 2026). This was an important 
+part of the activity because successful execution by itself did not prove that the program was 
+producing the correct result.
+Copilot was also more useful when I asked it to check whether broken code was 
+necessary before trying to repair it. One example involved a variable that attempted to add True 
+to a string. Instead of telling Copilot to simply make the types work together, I asked it to see 
+whether the variable was used anywhere else. It searched the file, found that the variable was 
+unused, and removed the unnecessary line rather than forcing a conversion that served no 
+purpose. A similar situation occurred with a try/except block that deliberately caused an error 
+
+and then hid it with a bare except. Copilot determined that the result was never used and 
+removed the block instead of leaving an error hidden just so the program appeared to work 
+(GitHub, 2026). In both cases, removing unnecessary code was cleaner than inventing behavior 
+the program did not need.
+Reliability became another part of the testing process. Once the normal input worked, I 
+asked Copilot to test the function with an empty list before making any additional changes. The 
+test failed because the function tried to access the first item in a list that contained nothing. 
+Copilot recommended adding a clear check at the beginning of the function and raising a 
+ValueError instead of returning an invented maximum or minimum. After making the change, it 
+tested both the empty list and the original list again. The empty input produced a clear error 
+message, while [1, 2, 3, 4, 5] still returned the correct statistics (GitHub, 2026). Testing both 
+cases helped verify that the new fix handled the bad input without breaking the working case.
+The final review also showed that a program can still contain issues even when VS Code 
+reports no errors. Copilot identified unreachable code after the return statement, unused 
+variables, an unnecessary loop, parameter reassignment, and other maintainability concerns. It 
+also pointed out that the function still assumes numeric input and that further validation would 
+depend on the intended requirements (GitHub, 2026). Copilot did not identify an obvious 
+security problem in this program because it was not working with credentials, files, networks, or 
+other sensitive resources. I did not continue fixing every remaining line because the purpose of 
+the activity was to evaluate Copilot's debugging process and recommendations, not to completely
+redesign the original program.
+Overall, I found GitHub Copilot useful for debugging because it could analyze a large 
+amount of code quickly, explain problems, make targeted edits, and test the results. The activity 
+
+also showed its limitations. Copilot gave a detailed and confident answer about the else 
+statement and was still wrong until I challenged it with evidence from Python and VS Code. My 
+prompts worked better when I gave Copilot actual error messages, limited what I wanted to 
+change, asked it to explain its reasoning, and then tested the result myself. I see Copilot as a 
+useful debugging partner, but not as a replacement for understanding the code, running the 
+program, and verifying that its recommendations are actually correct.
+
+References
+DAIR.AI. (n.d.). Prompt engineering guide. https://www.promptingguide.ai/
+GitHub. (2026). GitHub Copilot [AI coding assistant]. https://github.com/features/copilot
+GitHub. (n.d.). Prompt engineering for GitHub Copilot Chat. GitHub Docs.
+https://docs.github.com/en/copilot/concepts/prompting/prompt-engineering

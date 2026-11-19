@@ -1,0 +1,209 @@
+4-2 Journal: An Overview of Artificial Intelligence Ethics
+
+                     Michael Wood
+
+                         SNHU
+
+  Course Number:CS-530 AI Principles and Applications
+
+               Instructor: Francis Akowuah
+
+                  Date Due: 10/18/2026
+
+                  4-2 Journal: An Overview of Artificial Intelligence Ethics
+
+Ethical Principles and Implementation
+
+       Artificial intelligence can improve how people work, solve problems, and make
+
+decisions, but I do not believe that means it should operate without limits. The ethical principles
+
+that matter most to me are fairness, accountability, transparency, human oversight, privacy, and
+
+safety. I also believe those principles should apply across the board, no matter what field or
+
+industry is using AI.
+
+       Huang et al. (2023) point out that AI can create concerns involving privacy,
+
+discrimination, unemployment, safety, and security. Before any AI system is released, I believe it
+
+should be thoroughly tested for bias and other problems. It should be grounded in verifiable facts
+
+instead of made-up information, important decisions should require human review, and there
+
+should be detailed documentation so a user or administrator can go back and see how a response
+
+or decision was reached. Monitoring should not stop after release either. AI systems need to be
+
+watched and tested as long as they are being used.
+
+Technological Safeguards
+
+       Technology can help enforce these principles, but I do not trust a safeguard just because
+
+someone says it is there. Bias testing is a must, documentation is non-negotiable, human
+
+approval should be required for important decisions, and the system should be constantly
+
+monitored. Huang et al. (2023) explain that explainable AI can help people understand how an
+
+AI system reaches a result, while fairness techniques can help reduce biased outcomes. If I had to
+
+place more trust in any safeguard, it would be explainable AI and detailed audit logs because
+
+they give me something I can read and check for myself.
+
+       Even then, none of these safeguards are perfect. Bias testing only works if the right
+
+situations are being tested and people agree on what counts as fair. An explanation does not
+
+automatically make a decision correct, and an audit log can show what happened without
+
+proving that it was right. Human review has the same problem because the person reviewing the
+
+decision can bring in their own bias. That is why I see these safeguards as ways to verify and
+
+question AI, not as proof that it should be trusted without question.
+
+Challenges in Applying Ethics
+
+       One of the biggest problems with applying ethics to AI is that people do not always agree
+
+on what ethical behavior means. Huang et al. (2023) discusses virtue ethics, deontological ethics,
+
+and consequentialist ethics, and those approaches can judge the same decision differently. In
+
+plain terms, some people look at whether a decision helps most people, while others believe a
+
+decision can still be wrong if someone's rights are ignored, even when most people benefit. That
+
+is where putting ethics into software gets complicated. This is where I draw a hard line: I do not
+
+believe AI should be allowed to play God or treat people as an acceptable loss just because a
+
+system saves money or works faster. Money can be replaced and more can be made. A human
+
+life cannot be replaced once it is lost. When AI decisions involve health, safety, rights, or human
+
+life, I believe the standard must be much higher.
+
+       Fairness is another problem because it is a lot like beauty: it is in the eye of the beholder.
+
+What I believe is fair may not seem fair to someone else. I tend to trust verifiable facts and
+
+statistics more than personal opinion, but numbers are not automatically neutral either. People
+
+still decide what data to collect, which numbers matter, and how the results are interpreted. The
+
+math can be correct while the conclusion is still incomplete or unfair. There are simply too many
+
+hands in the pot for me to believe AI can ever be completely free from bias. Nishant et al. (2024)
+
+show that bias can also come from the way an AI algorithm interprets information, even when
+
+the data itself is not obviously biased. To me, that means cleaning up the data alone will never
+
+solve the entire problem. Neither technology nor human judgment is automatically unbiased, so
+
+testing, documentation, different perspectives, and accountability all have to work together.
+
+International Guidelines and Accountability
+
+       I do not believe people should have different ethical protections from AI just because
+
+they live in different parts of the world. Basic rules for fairness, accountability, transparency,
+
+privacy, human oversight, and safety should be worldwide. Jobin et al. (2019) found that many
+
+AI ethics guidelines agree on ideas such as transparency, fairness, avoiding harm, responsibility,
+
+and privacy, even though they often disagree on what those ideas should look like in practice.
+
+That is the problem I see with worldwide standards. Countries have different cultures, beliefs,
+
+governments, economic interests, and priorities. Getting everyone to agree would be extremely
+
+difficult, but I still believe we need a common set of basic protections.
+
+       I also believe those guidelines need consequences behind them. Developers, companies,
+
+governments, and others involved with AI should be held accountable when established rules are
+
+knowingly broken. A rule with no consequence for breaking it is little more than a suggestion.
+
+Mittelstadt (2019) makes a similar point by arguing that ethical principles alone cannot guarantee
+
+ethical AI if there is no clear way to put those principles into practice and hold people
+
+accountable. Future AI rules should require documentation, audits, a way to challenge harmful
+
+decisions, clear responsibility when something goes wrong, and real enforcement when serious
+
+violations occur. The whole world may never agree with every detail, but there should still be a
+
+basic set of rules that everyone can be measured against.
+
+Future Perspectives
+
+       My biggest concern about the future is not only what AI will become, but what humans
+
+may become as we depend on it more. Privacy already feels like it is becoming a thing of the
+
+past in a world full of cameras, connected devices, and digital services. I also expect AI and
+
+automation to keep changing the workforce and replacing some work people currently do. Huang
+
+et al. (2023) identify both privacy and unemployment as ethical concerns tied to AI.
+
+       I am just as concerned about people becoming too dependent on technology to think for
+
+themselves. Risko and Gilbert (2016) call this cognitive offloading, which is when we use
+
+outside tools to take some of the mental work off our plate. I have seen a simple version of this
+
+in my own life. There was a time when I could remember nearly every telephone number I
+
+regularly called. Now that my phone remembers those numbers for me, I sometimes must stop
+
+and think about my own. The same thing happens with calculators, navigation systems, and other
+
+technology. If we are not careful, AI could take that dependence much further.
+
+       I use AI almost every day and already rely on it when I am making decisions, but the
+
+important word is help. I use AI to find information, look at different possibilities, ask questions,
+
+and gather the facts I need to make an educated decision. I do not want AI to make those
+
+decisions for me. That is the line I keep coming back to throughout this paper. AI should help us
+
+think, not do our thinking for us. As AI becomes more capable, we still need to question it, verify
+
+what it tells us, and accept responsibility for the final decision ourselves.
+
+                                           References
+
+Huang, C., Zhang, Z., Mao, B., & Yao, X. (2023). An overview of artificial intelligence ethics.
+
+       IEEE Transactions on Artificial Intelligence, 4(4), 799–819.
+
+       https://doi.org/10.1109/TAI.2022.3194503
+
+Jobin, A., Ienca, M., & Vayena, E. (2019). The global landscape of AI ethics guidelines. Nature
+
+       Machine Intelligence, 1, 389–399. https://doi.org/10.1038/s42256-019-0088-2
+
+Mittelstadt, B. (2019). Principles alone cannot guarantee ethical AI. Nature Machine
+
+       Intelligence, 1, 501–507. https://doi.org/10.1038/s42256-019-0114-4
+
+Nishant, R., Schneckenberg, D., & Ravishankar, M. N. (2024). The formal rationality of artificial
+
+       intelligence-based algorithms and the problem of bias. Journal of Information
+
+       Technology, 39(1), 19–40. https://doi.org/10.1177/02683962231176842
+
+Risko, E. F., & Gilbert, S. J. (2016). Cognitive offloading. Trends in Cognitive Sciences, 20(9),
+
+       676–688. https://doi.org/10.1016/j.tics.2016.07.002

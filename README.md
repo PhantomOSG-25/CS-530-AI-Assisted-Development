@@ -1,62 +1,53 @@
-# CS-530 AI-Assisted Development
+# CS-530 AI Principles and Applications
 
-## Overview
+This repository contains coursework and project artifacts from **CS-530: AI Principles and Applications** at Southern New Hampshire University.
 
-This repository contains an academic project completed for **CS-530: AI Principles and Applications** at Southern New Hampshire University.
+The course focused on practical use of artificial intelligence in software development, including prompt engineering, AI-assisted debugging and code generation, ethics, intellectual property, security, hallucinations, hyperparameters, physical AI, and the responsibility developers retain when using AI tools.
 
-The project demonstrates an iterative AI-assisted software-development workflow using GitHub Copilot. Copilot was used to generate code from functional requirements, while I directed the prompts, reviewed the implementation, tested the results, and verified that the final program satisfied the required behavior.
-
-## Project
-
-The Python program implements a simple single-neuron binary classifier with four main functions:
-
-- `neuron()` calculates a neuron output using a selected activation function.
-- `binary_classifier()` applies the neuron to each row of a labeled data set.
-- `create_synthetic_data_set()` creates a two-feature binary-classification data set.
-- `calculate_weights()` trains weights for the selected activation function.
-
-The neuron supports two activation functions:
-
-- **Step**
-- **Sigmoid**
-
-## Testing and Verification
-
-The final implementation was tested by:
-
-1. Generating the synthetic data set.
-2. Calculating weights with the step activation function.
-3. Calculating weights with the sigmoid activation function.
-4. Running the binary classifier with the step weights.
-5. Running the binary classifier with the sigmoid weights.
-6. Verifying that all required functions completed successfully.
-
-Both activation paths produced matching binary predictions on the generated data set during the final test.
+A major theme throughout my work in this course was that AI can be useful and efficient, but its output still has to be questioned, tested, and verified by a human.
 
 ## Skills Demonstrated
 
-- AI-assisted software development
-- Prompt refinement
-- Requirements interpretation
-- Python
-- Neural-network fundamentals
-- Binary classification
-- Step and sigmoid activation functions
-- Testing and verification
-- Human review of AI-generated code
+- Prompt engineering and iterative prompt refinement
+- GitHub Copilot and AI-assisted software development
+- Python debugging and code evaluation
+- Python/Pygame development
+- Neural-network and activation-function fundamentals
+- AI hallucination testing and validation
+- AI ethics, fairness, accountability, and human oversight
+- Intellectual-property and licensing analysis
+- Security, privacy, and transparency analysis
+- Hyperparameter concepts and model behavior
+- Testing and verification of AI-generated code
+- Technical research and APA-formatted writing
+- Physical AI and autonomous-system analysis
 
-## Responsible AI Use
+## Repository Structure
 
-This was an **AI-assisted academic project**. The generated code was not treated as automatically correct simply because it ran. The workflow included requirement checks, testing, prompt refinement, and human verification.
+### `Activities/`
+Hands-on AI activities, including GitHub Copilot exercises, AI-assisted debugging, the Gator Pygame project, hallucination testing, and supporting chat logs.
 
-One of the strongest lessons from the course was that AI output still requires human understanding, testing, and accountability.
+### `Journals/`
+Written course journals covering prompt engineering, AI ethics, intellectual property, security and transparency, hallucinations, and hyperparameters.
 
-## Repository Contents
+### `Discussions/`
+Course discussion records and archived discussion work where the original text is available.
 
-- `CS530_neuron.py` - Final generated and verified Python implementation.
-- `README.md` - Project overview and documentation.
+### `Final-Project/`
+The Module 9 GitHub Copilot evaluation, generated single-neuron classifier, verification material, final evaluation summary, and exported Copilot chat logs.
 
-Course-provided code snippets, assignment documents, rubrics, and exported Copilot chat logs are intentionally not included.
+### `COURSEWORK_INDEX.md`
+A module-by-module record of completed coursework and the corresponding repository artifacts.
+
+## Important Context
+
+This repository contains **academic and project work**. Several assignments intentionally used AI tools such as GitHub Copilot and Claude. Where AI assisted with code or analysis, that is identified rather than presented as independently written professional work.
+
+Course-provided templates, rubrics, starter snippets, and proprietary instructional materials are not republished here. Student-created work, reflections, generated code, and exported AI interaction logs are included where available.
+
+## Key Takeaway
+
+The strongest lesson I am taking from CS-530 is that confidence is not proof. AI can produce useful explanations and working code, but a developer still has to understand the requirement, test the result, question unexpected behavior, and accept responsibility for the final decision.
 
 ## Author
 

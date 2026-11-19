@@ -1,0 +1,215 @@
+5-2 Journal: Intellectual Property Risks in AI-Generated Code
+
+                       Michael Wood
+
+                           SNHU
+
+      Course Number: CS-530 AI Princip and Applications
+
+                 Instructor: Francis Akowuah
+
+                    Date Due: 10/25/2026
+
+                5-2 Journal: Intellectual Property Risks in AI-Generated Code
+
+                              Intellectual Property and AI-Generated Code
+
+Intellectual Property Risks
+
+        AI-generated code can save developers time, but I do not believe that means we should
+
+automatically trust or use whatever it creates. One of my first concerns would be determining
+
+where the code came from. If GitHub Copilot generated code for me, I would compare it with
+
+similar projects before using it professionally. I would want to know whether the code appears to
+
+be original, whether similar code already exists in an open-source project, and what license
+
+applies to that code. Lucchi (2024) explains that generative AI creates copyright concerns on
+
+both sides of the process because copyrighted material may appear in the training data and
+
+questions can also arise over the originality and ownership of what the AI produces. To me, that
+
+means a developer cannot simply assume that AI-generated code is safe to use just because AI
+
+produced it.
+
+        I have no problem using open-source code, but open source does not mean someone can
+
+do whatever they want with it. I would first verify that the original source really is open source
+
+and then check the license to see what requirements apply. If attribution, copyright notices,
+
+source-code distribution, or other conditions are required, those requirements should be
+
+followed. Copyright infringement is a serious issue, and I would rather leave code out of a
+
+project than use something when I cannot verify that I have the right to use it. This would apply
+
+whether the project was private or commercial. My rule would be simple: if I cannot verify the
+
+origin and legal status of the code, I do not use it.
+
+        Ownership of AI-generated code is more complicated because AI does not fit neatly into
+
+the traditional idea of a human creator. Personally, I believe code created primarily by AI should
+
+generally be open source unless it contains proprietary information or was created specifically
+
+for a company. If proprietary company information is involved, I believe the company should
+
+control that code. If an independent programmer creates a project with AI assistance, I believe
+
+that programmer should retain whatever rights are legally available until those rights are sold or
+
+transferred. That is how I think it should work, although current copyright law makes ownership
+
+more complicated when there is little or no human creative contribution (Lucchi, 2024).
+
+Copyright and Software Licensing
+
+       Copyright and software licensing are related, but I do not see them as the same thing. My
+
+original way of thinking about copyright was that it protected the idea behind something, but
+
+copyright law actually protects the original expression of an idea rather than the idea, method, or
+
+system itself (U.S. Copyright Office, n.d.-a). In software, that can include the actual source code
+
+written by a person. An idea for a program or an algorithm by itself is not the same as the written
+
+code that expresses that idea.
+
+       I think of a software license more like a rental or usage agreement. The copyright owner
+
+has ownership rights in the protected work, while a license explains what someone else is
+
+allowed to do with that software. Depending on the license, a user may be allowed to run the
+
+software, modify it, redistribute it, or include parts of it in another project, but there may also be
+
+conditions attached. The U.S. Copyright Office (n.d.-b) explains that permission or a license can
+
+make certain uses of copyrighted material legal. This is why checking a license matters even
+
+when code is publicly available. Being able to see code online does not automatically mean I
+
+have permission to use it however I want.
+
+       AI makes this more difficult because the person receiving generated code may not know
+
+whether similar code exists somewhere else or what license may have applied to the original
+
+source. Lucchi (2024) discusses this lack of clear source attribution as one of the copyright
+
+problems surrounding generative AI. That is another reason I would compare AI-generated code
+
+with similar projects when possible and investigate anything that looks too close to an existing
+
+source. AI should not become a shortcut around the rules developers would normally be
+
+expected to follow.
+
+Responsible Use of AI-Generated Code
+
+       Responsible use starts before the AI ever generates code. I would never paste proprietary
+
+company code, trade secrets, passwords, API keys, or customer information into an AI prompt
+
+simply because I wanted help solving a problem. That could create security and confidentiality
+
+problems. Customer information should not be shared without proper authorization, and
+
+company information should be handled according to the company's security policies.
+
+Convenience does not outweigh protecting information that was trusted to the developer.
+
+       Once code has been generated, it still has to be reviewed and tested. Just because code
+
+runs does not mean it works properly. I learned that lesson during the debugging activity earlier
+
+in this course. Code can compile or run without an obvious error and still contain logic problems
+
+that cause the wrong result. AI-generated code should be read, tested, debugged, and checked for
+
+security issues before it becomes part of a real project. Moradi Dakhel et al. (2023) reached a
+
+similar conclusion in their study of GitHub Copilot. They found that Copilot could generate
+
+useful and efficient solutions, but some suggestions were buggy or could not be reliably
+
+reproduced. They also warned that Copilot could become a problem when developers accept its
+
+suggestions without enough experience to recognize when something is wrong.
+
+       I believe the programmer and the company deploying the software are ultimately
+
+responsible for the code they accept into a product. AI is a tool responding to what it has been
+
+asked to do. It is still the developer's responsibility to make sure the code is secure, legal to use,
+
+maintainable, and actually does what it is supposed to do. Blaming the AI after a security
+
+vulnerability, copyright violation, or software failure does not change the fact that a person or
+
+company chose to use the code without catching the problem.
+
+        Documentation is also important, although I do not believe every AI conversation
+
+automatically needs to be stored forever. There is a balance. Developers need enough
+
+documentation to repeat and understand the design process, and a project can disclose that AI
+
+was used during development or testing when appropriate. More detailed records may be
+
+necessary when required by company policy, regulations, or the sensitivity of the project. What I
+
+consider non-negotiable is documenting testing and checking licenses, whether the code was
+
+created by a human or AI. The standard should apply to the code itself instead of changing
+
+simply because AI was involved.
+
+Conclusion
+
+        AI-generated code can be extremely useful, but I believe the responsibility still belongs to
+
+the people using it. Developers should verify the source and licensing of code, protect
+
+confidential information when writing prompts, review and test everything the AI produces, and
+
+document important testing and decisions. AI can make programming faster, but faster does not
+
+automatically mean better.
+
+        The biggest point for me is that AI should help the developer, not replace the developer's
+
+judgment or responsibility. If I cannot verify that code works correctly or that I have the legal
+
+right to use it, I would not use it. Copyright, licensing, security, and software quality are too
+
+important to assume that an AI system already took care of them for me.
+
+                                             References
+
+Lucchi, N. (2024). ChatGPT: A case study on copyright challenges for generative artificial
+
+       intelligence systems. European Journal of Risk Regulation, 15(3), 602–624.
+
+       https://doi.org/10.1017/err.2023.59
+
+Moradi Dakhel, A., Majdinasab, V., Nikanjam, A., Khomh, F., Desmarais, M. C., & Jiang, Z. M.
+
+       (2023). GitHub Copilot AI pair programmer: Asset or liability? Journal of Systems and
+
+       Software, 203, 111734. https://doi.org/10.1016/j.jss.2023.111734
+
+U.S. Copyright Office. (n.d.-a). Works not protected by copyright (Circular 33).
+
+       https://www.copyright.gov/circs/circ33.pdf
+
+U.S. Copyright Office. (n.d.-b). How to obtain permission (Circular 16A).
+
+       https://www.copyright.gov/circs/circ16a.pdf

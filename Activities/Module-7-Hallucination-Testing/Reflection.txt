@@ -1,0 +1,20 @@
+Experiencing and Correcting an AI Hallucination
+Michael Wood
+SNHU
+CS-530: AI Principles and Applications
+Instructor: Professor Francis Akowuah
+Date Due: 11/08/2026
+
+Experiencing and Correcting an AI Hallucination
+For this activity, I used GitHub Copilot with my Gator game project from an earlier module. My goal was to see whether Copilot would accept believable but incorrect information about Pygame and then generate code around something that did not really exist. I used Python 3.13 and Pygame 2.6.1 and changed the prompt three times. In the end, I was not able to make Copilot hallucinate, but the results were still useful because it showed how the tool handled false assumptions.
+Testing GitHub Copilot
+My first prompt asked Copilot to use a built-in on_collision() method from the Pygame Sprite class. Copilot corrected me and explained that Pygame does not have that method. It used pygame.sprite.spritecollide() instead. I then asked it to use an on_collision callback parameter with spritecollide(). Copilot again corrected the request and explained that the real parameter is called collided. For the final attempt, I asked it to use a built-in pygame.sprite.spritebounce() function. Copilot rejected that too and used spritecollide() while reversing the alligator's movement direction to create the bounce effect.
+Why the Result Matters
+Even though Copilot did not hallucinate during this activity, the prompts showed how easy it would be for incorrect code to look believable. Names such as on_collision() and spritebounce() sound like functions that a game library could reasonably have. If an AI accepted one of those names and generated code around it, the code could look normal and even pass a basic syntax check while still failing when the program actually tried to run it. Yang et al. (2026) explain that AI-generated code can appear correct in its structure while still containing errors in meaning or logic. That is why simply seeing code that looks right is not enough.
+If Copilot had accepted one of the false Pygame features and I had used that code without checking it, the mistake could have wasted time during debugging or caused me to build more code around a bad assumption. In a class project that might only cost time. In a larger program, the same kind of mistake could spread into other parts of the software and become harder to find later.
+Prompt Changes and Future Strategy
+Each prompt became more specific. I first gave Copilot a false method name, then a false callback parameter, and finally a false function name. I also told it the exact Pygame version so it had less room to guess. Copilot challenged the incorrect parts instead of blindly following them. This showed me that clear version information and specific requirements can help the tool give a better answer.
+For future AI-assisted coding, I would still verify important functions with the official documentation and test the code in the actual environment where it will run. I would also make changes in smaller steps so problems are easier to isolate. When writing prompts, I would include the exact programming language and library versions, clearly state the limits of the task, tell the AI not to invent functions that are not documented, and ask it to request clarification when it does not have enough information. A syntax check is useful, but it does not prove that every function exists or that the program behaves correctly. The biggest lesson from this activity is that AI can be helpful, but I still have to question the output and verify it instead of assuming that a confident answer is a correct answer.
+
+References
+Yang, B., Dang, J., Liu, H., & Jin, Z. (2026). Advancing LLM-generated code reliability: A hybrid approach for hallucination detection. IEEE Transactions on Software Engineering, 52(2), 578–594. https://doi.org/10.1109/TSE.2025.3640641

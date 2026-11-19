@@ -1,0 +1,99 @@
+The Risks of AI Hallucinations in Code Generation
+
+                   Michael Wood
+
+                      SNHU
+
+Course Number: CS-530 AI Principles and Applications
+
+            Instructor: Francis Akowuah
+
+               Date Due: 11/08/2026
+
+                          The Risks of AI Hallucinations in Code Generation
+
+       An LLM hallucination happens when an AI gives an answer that sounds believable but is
+
+wrong, misleading, or completely made up. In code generation, that could mean using a function
+
+that does not exist, making up a library, creating logic that looks reasonable but does not work
+
+correctly, or confidently explaining code that is actually wrong. To me, the confidence is what
+
+makes hallucinations dangerous. A response can look professional enough that someone may
+
+accept it without questioning it.
+
+                                    Causes of Hallucinations
+
+       LLMs do not understand code the same way a programmer does. They generate
+
+responses by predicting patterns from their training data and the context they are given. If that
+
+data contains mistakes, outdated information, conflicting examples, or gaps, the model can still
+
+produce an answer even when it does not have enough reliable information. A vague or
+
+incomplete prompt can make the problem worse because the AI may fill in missing details
+
+instead of stopping and asking for clarification.
+
+       I have already seen this happen with GitHub Copilot. In an earlier assignment, Python
+
+and VS Code were both showing that there was a syntax error, but Copilot initially told me the
+
+code was valid. It sounded confident until I challenged it, and then it changed its answer. That
+
+taught me something important: the AI changing its answer does not prove the new answer is
+
+correct either. It still has to be checked against something independent, such as the compiler, test
+
+results, documentation, or actual program behavior. Yang et al. (2026) describe code
+
+hallucinations as generated code that can look structurally correct while still containing errors in
+
+meaning or logic.
+
+                                     Impact of Hallucinations
+
+       In a small class project, a hallucination may only break a feature or waste time. In a
+
+larger system, a nonexistent function, bad API call, or flawed logic could create security
+
+vulnerabilities, corrupt data, or cause failures. If the mistake spreads before anyone notices it,
+
+one small error can become a much larger problem.
+
+       The biggest risk is when people trust AI because the answer looks right. A hidden error
+
+may not appear until software is already being used. At Hankook Tire, quality comes first
+
+because we make tires people depend on every day, and a failure can affect someone's safety. I
+
+look at high-risk software the same way. Whether the product is physical or digital, speed should
+
+never come before making sure the work is correct.
+
+                                Human Oversight and Validation
+
+       Human oversight matters because AI should help a developer, not replace judgment.
+
+Generated code should be reviewed, compiled, tested, and compared with documentation before
+
+it is trusted. Yang et al. (2026) evaluated a detection approach that combines static and dynamic
+
+analysis, reinforcing the value of using more than one verification method.
+
+       Verification should not mean repeatedly asking the same AI if it is correct. Developers
+
+need independent evidence and the authority to reject bad output. AI may be faster, but the
+
+person using it remains responsible for testing and verifying the final product.
+
+                                             References
+
+Yang, B., Dang, J., Liu, H., & Jin, Z. (2026). Advancing LLM-generated code reliability: A
+
+       hybrid approach for hallucination detection. IEEE Transactions on Software
+
+       Engineering, 52(2), 578–594. https://doi.org/10.1109/TSE.2025.3640641
